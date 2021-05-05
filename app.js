@@ -85,7 +85,7 @@ app.post("/", function (req, res) {
     //    type a word 
     word = req.body.o;
     // amount 
-    amount = req.body.p;
+    // amount = req.body.p;
     // console.log(cat.join(","));
     // console.log(asp.join(","));
     
