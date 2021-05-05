@@ -97,8 +97,7 @@ app.post("/", function (req, res) {
             const joker=JSON.parse(data);
             // console.log(joker);
             // console.log(joker.error);
-            if(joker.error==false)
-            {
+           
                 if(joker.type == "single")
                 {
                     // If type == "single", the joke only has the "joke" property
@@ -116,10 +115,6 @@ app.post("/", function (req, res) {
                     res.render("joke1",{person1:j1,person2:j2}); 
                     
                 }
-            }
-            else{
-                res.render("error");
-            }
            
         })
     });
