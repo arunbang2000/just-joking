@@ -10,7 +10,7 @@ h1 {
     content: "";
     background: url(laugh.jpg) no-repeat center center/cover;
     position: absolute;
-    height: 822px;
+    height: 837px;
     width: 100%;
     z-index: -1; 
     opacity: 0.5;
