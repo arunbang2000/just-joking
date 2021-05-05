@@ -97,24 +97,27 @@ app.post("/", function (req, res) {
             const joker=JSON.parse(data);
             // console.log(joker);
             // console.log(joker.error);
-           
-                if(joker.type == "single")
-                {
-                    // If type == "single", the joke only has the "joke" property
-                    // console.log(joker.joke);
-                    const j1=joker.joke;
-                    res.render("joke2",{person1:j1})
-                    // console.log("\n");
-                }
-                else
-                {
-                    // If type == "twopart", the joke has the "setup" and "delivery" properties
-                    // console.log(joker.setup);
-                    const j1=joker.setup;
-                    const j2=joker.delivery;
-                    res.render("joke1",{person1:j1,person2:j2}); 
-                    
-                }
+           if(joker.error==false){
+            if(joker.type == "single")
+            {
+                // If type == "single", the joke only has the "joke" property
+                // console.log(joker.joke);
+                const j1=joker.joke;
+                res.render("joke2",{person1:j1})
+                // console.log("\n");
+            }
+            else
+            {
+                // If type == "twopart", the joke has the "setup" and "delivery" properties
+                // console.log(joker.setup);
+                const j1=joker.setup;
+                const j2=joker.delivery;
+                res.render("joke1",{person1:j1,person2:j2}); 
+                
+            }
+           } else if(joker.error==true){
+               res.render("err");
+           }
            
         })
     });
