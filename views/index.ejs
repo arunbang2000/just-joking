@@ -1,0 +1,91 @@
+<%- include("header") -%>
+    <div class="container d-flex justify-content-center d-flex align-items-center mt-5">
+        <form action="/" method="POST">
+            <div class="form-check">
+                <h1 >Select Category</h1>
+                <div class="form-check form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="z">
+                    <label class="form-check-label" for="flexSwitchCheckDefault" >Any</label>
+                </div>
+                <div class="form-check form-switch form-check-inline ">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="a">
+                    <label class="form-check-label" for="flexSwitchCheckDefault" id="anu">Programming</label>
+                </div>
+                <div class="form-check form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="b">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Misc</label>
+                </div>
+                <div class="form-check form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="c">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Dark</label>
+                </div>
+                <div class="form-check form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="d">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Pun</label>
+                </div>
+                <div class="form-check form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="e">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Spooky</label>
+                </div>
+                <h1>Select language</h1>
+                <td>
+                    <div>
+                        <select name="f" >
+                            <option value="cs">cs - Czech</option>
+                            <option value="de">de - German</option>
+                            <option value="en">en - English</option>
+                            <option value="es">es - Spanish</option>
+                            <option value="fr">fr - French</option>
+                            <option value="pt">pt - Portuguese</option>
+                        </select>
+                    </div>
+                </td>
+                <h1>Blacklist an aspect</h1>
+                <div class="form-check">
+                    (optional)
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="g">
+                        <label class="form-check-label" for="flexSwitchCheckDefault" >nsfw</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="h">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Religious</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="i">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Political</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="j">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Racist</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="k">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Sexist</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="l">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">explicit</label>
+                    </div>
+                </div>
+                <h1>Select a joke type</h1>
+                    <div class="form-check form-check-inline form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="m">
+                        <label class="form-check-label" for="flexCheckDefault">single</label>
+                      </div>
+                        <div class="form-check form-check-inline form-switch">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="n">
+                            <label class="form-check-label" for="flexCheckChecked">Two part</label>
+                          </div>
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label"><h1 >Search for a joke that contains a word</h1></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="(OPTIONAL))" name="o" autocomplete="off">
+                      </div>
+                      <br>
+                      <br>
+                      <div>
+                        <button type="submit" class="btn btn-success">Get A Joke</button>
+                      </div>
+        </form>
+    </div>
+        <%- include("footer") -%>

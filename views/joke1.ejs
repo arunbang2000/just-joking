@@ -1,0 +1,16 @@
+<%- include("header") -%>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>HEY!</strong>  Hoping You Had A Great Laugh
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<div class="container mt-5">
+<h1 style="color: red;">JOKE::</h1>
+<h2 style="text-decoration: underline;">Person 1:</h2>
+<p><%= person1 %></p>
+<h2 style="text-decoration: underline;">Person 2:</h2>
+<p><%= person2 %></p>
+<form action="/" method="GET">
+    <button type="submit" class="btn btn-success">Get Another Joke</button>
+    </form>
+    </div>
+<%- include("footer") -%>
